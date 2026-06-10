@@ -1,0 +1,14 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Helper to check if the user is the authenticated admin
+    function isAdmin() {
+      return request.auth != null && request.auth.token.email == 'shaheershaheer3867@gmail.com';
+    }
+
+    match /{allPaths=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+  }
+}

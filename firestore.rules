@@ -1,0 +1,50 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper to check if the user is the authenticated admin
+    function isAdmin() {
+      return request.auth != null && request.auth.token.email == 'shaheershaheer3867@gmail.com';
+    }
+
+    // Projects: Public can read published ones; Admin can read all and write
+    match /projects/{projectId} {
+      allow read: if resource == null || resource.data.published == true || isAdmin();
+      allow write: if isAdmin();
+    }
+
+    // Blogs: Public can read published ones; Admin can read all and write
+    match /blogs/{blogId} {
+      allow read: if resource == null || resource.data.published == true || isAdmin();
+      allow write: if isAdmin();
+    }
+
+    // About section: Public can read; Admin can write
+    match /about/{document} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Skills: Public can read; Admin can write
+    match /skills/{skillId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Contacts: Anyone can submit (create); Admin can read/write
+    match /contacts/{contactId} {
+      allow create: if true;
+      allow read, update, delete: if isAdmin();
+    }
+
+    // Media metadata: Public can read; Admin can write
+    match /media/{mediaId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+    
+    // User settings or metadata: Admin only
+    match /users/{userId} {
+      allow read, write: if isAdmin();
+    }
+  }
+}
