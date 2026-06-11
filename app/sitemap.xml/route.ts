@@ -1,6 +1,4 @@
-import { getPublishedBlogs, getPublishedProjects } from "../lib/db-queries";
-
-const SITE_URL = "https://sanaullahshaheer.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL || "https://sanaullahshaheer.vercel.app";
 
 function urlEntry(loc: string, lastmod?: string) {
   return `<url><loc>${loc}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}</url>`;
@@ -8,6 +6,10 @@ function urlEntry(loc: string, lastmod?: string) {
 
 export async function GET() {
   try {
+    const { getPublishedBlogs, getPublishedProjects } = await import(
+      "../../lib/db-queries"
+    );
+
     const blogs = await getPublishedBlogs();
     const projects = await getPublishedProjects();
 
@@ -19,20 +21,19 @@ export async function GET() {
       urls.push(`${SITE_URL}/${p}`.replace(/([^:]\/)\/+/g, "$1"));
     }
 
-    for (const b of blogs) {
+    for (const b of blogs || []) {
       const loc = `${SITE_URL}/blog/${b.slug}`;
       urls.push(loc);
     }
 
-    for (const p of projects) {
+    for (const p of projects || []) {
       const loc = `${SITE_URL}/projects/${p.id}`;
       urls.push(loc);
     }
 
-    const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${urls.map((u) => urlEntry(u)).join("\n  ")}
-</urlset>`;
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  ${urls
+      .map((u) => urlEntry(u))
+      .join("\n  ")}\n</urlset>`;
 
     return new Response(xml, {
       headers: {
@@ -45,3 +46,5 @@ export async function GET() {
     return new Response("", { status: 500 });
   }
 }
+
+export default GET;

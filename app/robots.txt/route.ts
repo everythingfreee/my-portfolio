@@ -1,4 +1,4 @@
-const SITE_URL = "https://sanaullahshaheer.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL || "https://sanaullahshaheer.vercel.app";
 
 export async function GET() {
   const txt = [
@@ -15,3 +15,5 @@ export async function GET() {
     },
   });
 }
+
+export default GET;
