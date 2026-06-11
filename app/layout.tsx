@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default: "Sanaullah Shaheer | Full-Stack Portfolio",
   },
   description: "Personal portfolio and blog of Sanaullah Shaheer, showcasing full-stack projects, articles, and skillset.",
-  metadataBase: new URL("https://sanaullahshaheer.work.gd"),
+  metadataBase: new URL("https://sanaullahshaheer.vercel.app"),
   alternates: {
     canonical: "/",
   },
