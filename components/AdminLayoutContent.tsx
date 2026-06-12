@@ -52,7 +52,9 @@ export const AdminLayoutContent: React.FC<{ children: React.ReactNode }> = ({
         </Link>
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="p-2 rounded-xl text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 focus:outline-none"
+          className="p-2 rounded-xl text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
+          aria-label={mobileMenuOpen ? "Close admin menu" : "Open admin menu"}
+          aria-expanded={mobileMenuOpen}
         >
           {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>

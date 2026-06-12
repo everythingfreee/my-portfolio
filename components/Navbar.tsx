@@ -57,7 +57,7 @@ export const Navbar = () => {
             <Link href="/" className="flex items-center space-x-2 group">
               {/* Use the icon.webp here with the same width and height and design */}
               <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-[color:var(--color-primary)] to-[color:var(--color-primary-2)] flex items-center justify-center text-white font-bold text-lg shadow-md shadow-[color:var(--color-primary)]/20 group-hover:scale-105 transition-transform duration-200">
-               <img src={'./favicon.ico'}></img>
+               <img src={'./favicon.ico'} alt="Website main logo"></img>
               </div>
               <span className="font-sans font-bold text-xl tracking-tight text-[color:var(--foreground)] group-hover:text-[color:var(--color-primary)] transition-colors duration-200">
                 Sanaullah Shaheer | ثناالله شهیر
@@ -119,7 +119,9 @@ export const Navbar = () => {
             )}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-xl text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-900 focus:outline-none"
+              className="p-2 rounded-xl text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
+              aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={isOpen}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

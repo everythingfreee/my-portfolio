@@ -59,6 +59,7 @@ export default async function Home() {
 
       {/* Core Expertise Summary */}
       <section className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 className="sr-only">Core Expertise</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="glass-card p-6 flex flex-col space-y-3">
             <div className="h-10 w-10 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 flex items-center justify-center text-indigo-600 dark:text-indigo-400">
@@ -111,9 +112,9 @@ export default async function Home() {
         </div>
 
         {projects.length === 0 ? (
-          <div className="glass-card p-12 text-center text-zinc-500 dark:text-zinc-400">
+          <div className="glass-card p-12 text-center text-zinc-600 dark:text-zinc-400">
             <p className="mb-4 text-lg">No projects added yet.</p>
-            <p className="text-sm text-zinc-400 dark:text-zinc-500">
+            <p className="text-sm text-zinc-600 dark:text-zinc-500">
               Log in to the Admin Panel to publish your work.
             </p>
           </div>
@@ -190,9 +191,9 @@ export default async function Home() {
         </div>
 
         {blogs.length === 0 ? (
-          <div className="glass-card p-12 text-center text-zinc-500 dark:text-zinc-400">
+          <div className="glass-card p-12 text-center text-zinc-600 dark:text-zinc-400">
             <p className="mb-4 text-lg">No articles posted yet.</p>
-            <p className="text-sm text-zinc-400 dark:text-zinc-500">
+            <p className="text-sm text-zinc-600 dark:text-zinc-500">
               Log in to the Admin Panel to write blog posts.
             </p>
           </div>

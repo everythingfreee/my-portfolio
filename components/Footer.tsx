@@ -90,7 +90,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-zinc-100 dark:border-zinc-900 mt-8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-400 dark:text-zinc-500">
+        <div className="border-t border-zinc-100 dark:border-zinc-900 mt-8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-600 dark:text-zinc-400">
           <p>© {currentYear} Sanaullah Shaheer. All rights reserved.</p>
           <div className="flex space-x-4">
             <Link href="/admin/login" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
