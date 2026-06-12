@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL || "https://sanaullahshaheer.vercel.app";
 
 export async function GET() {
