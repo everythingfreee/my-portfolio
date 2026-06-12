@@ -55,11 +55,12 @@ export const Navbar = () => {
           {/* Logo / Brand Name */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center space-x-2 group">
-              <span className="h-9 w-9 rounded-xl bg-gradient-to-br from-[color:var(--color-primary)] to-[color:var(--color-primary-2)] flex items-center justify-center text-white font-bold text-lg shadow-md shadow-[color:var(--color-primary)]/20 group-hover:scale-105 transition-transform duration-200">
-                S
-              </span>
+              {/* Use the icon.webp here with the same width and height and design */}
+              <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-[color:var(--color-primary)] to-[color:var(--color-primary-2)] flex items-center justify-center text-white font-bold text-lg shadow-md shadow-[color:var(--color-primary)]/20 group-hover:scale-105 transition-transform duration-200">
+               <img src={'./favicon.ico'}></img>
+              </div>
               <span className="font-sans font-bold text-xl tracking-tight text-[color:var(--foreground)] group-hover:text-[color:var(--color-primary)] transition-colors duration-200">
-                Shaheer
+                Sanaullah Shaheer | ثناالله شهیر
               </span>
             </Link>
           </div>

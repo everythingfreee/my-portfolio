@@ -8,6 +8,7 @@ export const dynamic = "force-dynamic";
 export async function generateMetadata(): Promise<Metadata> {
   const about = await getAboutContent();
   return {
+    applicationName: "Sanaullah Shaheer Portfolio",
     title: about?.title ? `${about.title} | About` : "About Me",
     description: about?.bio 
       ? about.bio.substring(0, 160) 

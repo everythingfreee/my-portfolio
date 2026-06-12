@@ -36,7 +36,7 @@ export default async function Home() {
         </h1>
 
         <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl leading-relaxed mb-8">
-          Hi, I&apos;m <span className="font-semibold text-zinc-900 dark:text-zinc-100">Sanaullah Shaheer</span>. I build production-grade web applications with pixel-perfect design, scalable backend APIs, and modern SEO architectures.
+          Hi, I&apos;m <span className="font-semibold text-zinc-900 dark:text-zinc-100">Sanaullah Shaheer (Shabeer)</span>. Full-Stack Developer, Mobile App Developer, and Creative Designer — building web & mobile apps, UI/UX, 3D, and multimedia content.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md">

@@ -15,12 +15,12 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { name: "GitHub", href: "https://github.com/TODO", icon: GithubIcon, color: "hover:text-zinc-900 dark:hover:text-zinc-100" },
-    { name: "X (Twitter)", href: "https://x.com/TODO", icon: TwitterIcon, color: "hover:text-sky-500" },
-    { name: "Facebook", href: "https://facebook.com/TODO", icon: FacebookIcon, color: "hover:text-blue-600" },
-    { name: "LinkedIn", href: "https://linkedin.com/TODO", icon: LinkedinIcon, color: "hover:text-blue-500" },
-    { name: "Instagram", href: "https://instagram.com/TODO", icon: InstagramIcon, color: "hover:text-pink-500" },
-    { name: "TikTok", href: "https://tiktok.com/TODO", icon: TiktokIcon, color: "hover:text-cyan-400" },
+    { name: "GitHub", href: "https://github.com/Everythingfreee", icon: GithubIcon, color: "hover:text-zinc-900 dark:hover:text-zinc-100" },
+    { name: "X (Twitter)", href: "https://x.com/ShaheerDev48010", icon: TwitterIcon, color: "hover:text-sky-500" },
+    { name: "Facebook", href: "https://facebook.com/sanullah.amarkhel", icon: FacebookIcon, color: "hover:text-blue-600" },
+    { name: "LinkedIn", href: "https://linkedin.com/in/sanaullah-shaheer-a43795367", icon: LinkedinIcon, color: "hover:text-blue-500" },
+    { name: "Instagram", href: "https://instagram.com/shaheerdev6727", icon: InstagramIcon, color: "hover:text-pink-500" },
+    { name: "TikTok", href: "https://tiktok.com/@shaheer.dev27", icon: TiktokIcon, color: "hover:text-cyan-400" },
   ];
 
   return (
@@ -38,7 +38,7 @@ export const Footer = () => {
               </span>
             </Link>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-xs leading-relaxed">
-              Full-Stack Developer building modern, highly-optimized web applications with Next.js and Firebase.
+              Full-Stack Developer, Mobile App Developer, and Creative Designer from Afghanistan. I build modern web and mobile applications, UI/UX designs, and creative digital experiences.
             </p>
           </div>
 
@@ -56,11 +56,11 @@ export const Footer = () => {
                 <span>+93 777 386 727</span>
               </a>
               <a
-                href="mailto:shaheershaheer3867@gmail.com"
+                href="mailto:contact@sanaullahshaheer.work.gd"
                 className="flex items-center space-x-2.5 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
               >
                 <Mail size={15} />
-                <span>shaheershaheer3867@gmail.com</span>
+                <span>contact@sanaullahshaheer.work.gd</span>
               </a>
             </div>
           </div>

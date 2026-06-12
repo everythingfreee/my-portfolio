@@ -8,6 +8,7 @@ export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Blog",
+  applicationName: "Sanaullah Shaheer Portfolio",
   description: "Read technical articles, code guides, development tutorials, and project logs written by Sanaullah Shaheer.",
   openGraph: {
     title: "Blog | Sanaullah Shaheer",

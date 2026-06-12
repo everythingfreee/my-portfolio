@@ -59,12 +59,12 @@ export default function ContactPage() {
   };
 
   const socialLinks = [
-    { name: "GitHub", href: "https://github.com/TODO", icon: GithubIcon, color: "hover:text-zinc-900 dark:hover:text-zinc-100" },
-    { name: "X (Twitter)", href: "https://x.com/TODO", icon: TwitterIcon, color: "hover:text-sky-500" },
-    { name: "Facebook", href: "https://facebook.com/TODO", icon: FacebookIcon, color: "hover:text-blue-600" },
-    { name: "LinkedIn", href: "https://linkedin.com/TODO", icon: LinkedinIcon, color: "hover:text-blue-500" },
-    { name: "Instagram", href: "https://instagram.com/TODO", icon: InstagramIcon, color: "hover:text-pink-500" },
-    { name: "TikTok", href: "https://tiktok.com/TODO", icon: TiktokIcon, color: "hover:text-cyan-400" },
+    { name: "GitHub", href: "https://github.com/Everythingfreee", icon: GithubIcon, color: "hover:text-zinc-900 dark:hover:text-zinc-100" },
+    { name: "X (Twitter)", href: "https://x.com/ShaheerDev48010", icon: TwitterIcon, color: "hover:text-sky-500" },
+    { name: "Facebook", href: "https://facebook.com/sanullah.amarkhel", icon: FacebookIcon, color: "hover:text-blue-600" },
+    { name: "LinkedIn", href: "https://linkedin.com/in/sanaullah-shaheer-a43795367", icon: LinkedinIcon, color: "hover:text-blue-500" },
+    { name: "Instagram", href: "https://instagram.com/shaheerdev6727", icon: InstagramIcon, color: "hover:text-pink-500" },
+    { name: "TikTok", href: "https://tiktok.com/@shaheer.dev27", icon: TiktokIcon, color: "hover:text-cyan-400" },
   ];
 
   return (
@@ -103,7 +103,7 @@ export default function ContactPage() {
               </a>
 
               <a
-                href="mailto:shaheershaheer3867@gmail.com"
+                href="mailto:contact@sanaullahshaheer.work.gd"
                 className="flex items-center space-x-3.5 text-zinc-650 dark:text-zinc-355 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors group"
               >
                 <div className="p-3 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/50 dark:border-zinc-800/50 rounded-xl group-hover:bg-indigo-50 dark:group-hover:bg-indigo-950/30 transition-colors">
@@ -113,7 +113,7 @@ export default function ContactPage() {
                   <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wider block">
                     Email
                   </span>
-                  <span className="font-semibold text-sm sm:text-base">shaheershaheer3867@gmail.com</span>
+                  <span className="font-semibold text-sm sm:text-base">contact@sanaullahshaheer.work.gd</span>
                 </div>
               </a>
             </div>

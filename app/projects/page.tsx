@@ -6,7 +6,9 @@ import ProjectsList from "@/components/ProjectsList";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
+  applicationName: "Sanaullah Shaheer Portfolio",
   title: "Projects",
+
   description: "Explore the development portfolio of Sanaullah Shaheer, including Next.js web applications, mobile platforms, and backend services.",
   openGraph: {
     title: "Projects | Sanaullah Shaheer",
@@ -14,6 +16,7 @@ export const metadata: Metadata = {
     url: "/projects",
   },
 };
+
 
 export default async function ProjectsPage() {
   const projects = await getPublishedProjects();
