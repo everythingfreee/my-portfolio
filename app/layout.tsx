@@ -25,7 +25,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sanaullahshaheer.vercel.app"),
   
   alternates: {
-    canonical: "/",
   },
   openGraph: {
     title: "Sanaullah Shaheer | Full-Stack Developer",
@@ -61,6 +60,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      
       <body className="min-h-full flex flex-col bg-[color:var(--background)] text-[color:var(--foreground)] transition-colors duration-300">
         <AuthProvider>
           <div className="w-full bg-gradient-to-br from-[color:var(--color-primary)]/8 to-[color:var(--color-primary-2)]/6 shadow-sm">

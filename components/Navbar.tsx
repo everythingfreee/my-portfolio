@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { Menu, X, LayoutDashboard, LogOut, User, FolderKanban, BookOpen, Mail, Home } from "lucide-react";
@@ -57,7 +58,7 @@ export const Navbar = () => {
             <Link href="/" className="flex items-center space-x-2 group">
               {/* Use the icon.webp here with the same width and height and design */}
               <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-[color:var(--color-primary)] to-[color:var(--color-primary-2)] flex items-center justify-center text-white font-bold text-lg shadow-md shadow-[color:var(--color-primary)]/20 group-hover:scale-105 transition-transform duration-200">
-               <img src={'./favicon.ico'} alt="Website main logo"></img>
+                <Image src="/favicon.ico" alt="Website main logo" width={36} height={36} priority />
               </div>
               <span className="font-sans font-bold text-xl tracking-tight text-[color:var(--foreground)] group-hover:text-[color:var(--color-primary)] transition-colors duration-200">
                 Sanaullah Shaheer | ثناالله شهیر
