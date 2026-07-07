@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { GithubIcon, TwitterIcon, FacebookIcon, InstagramIcon, LinkedinIcon, TiktokIcon } from "./brandIcons";
+import { GithubIcon, TwitterIcon, FacebookIcon, InstagramIcon, LinkedinIcon, TiktokIcon, FooterIcon } from "./brandIcons";
 import { AtSign, MessageSquare, Phone, Mail, Award } from "lucide-react";
 
 export const Footer = () => {
@@ -31,14 +31,14 @@ export const Footer = () => {
           <div className="flex flex-col space-y-4">
             <Link href="/" className="flex items-center space-x-2">
               <span className="h-8 w-8 rounded-lg bg-gradient-to-br from-[color:var(--color-primary)] to-[color:var(--color-primary-2)] flex items-center justify-center text-white font-bold text-base shadow-sm">
-                S
+                <FooterIcon size={16} />
               </span>
               <span className="font-sans font-bold text-lg tracking-tight text-[color:var(--foreground)]">
                 Shaheer
               </span>
             </Link>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-xs leading-relaxed">
-              Full-Stack Developer, Mobile App Developer, and Creative Designer from Afghanistan. I build modern web and mobile applications, UI/UX designs, and creative digital experiences.
+              Data Scientist, Full-Stack Developer, Mobile App Developer, and Creative Designer from Afghanistan. I build modern web and mobile applications, UI/UX designs, and creative digital experiences.
             </p>
           </div>
 

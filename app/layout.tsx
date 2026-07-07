@@ -19,16 +19,16 @@ export const metadata: Metadata = {
   applicationName: "Sanaullah Shaheer Portfolio",
   title: {
     template: "%s | Sanaullah Shaheer",
-    default: "Sanaullah Shaheer | Full-Stack Developer",
+    default: "Sanaullah Shaheer | Data Scientist & Full-Stack Developer",
   },
-  description: "Full-Stack Developer, Mobile App Developer, and Creative Designer from Afghanistan. Showcasing web & mobile projects, UI/UX, and technical articles.",
+  description: "Data Scientist, Full-Stack Developer, Mobile App Developer, and Creative Designer from Afghanistan. Showcasing web & mobile projects, UI/UX, and technical articles.",
   metadataBase: new URL("https://sanaullahshaheer.vercel.app"),
   
   alternates: {
   },
   openGraph: {
-    title: "Sanaullah Shaheer | Full-Stack Developer",
-    description: "Full-Stack Developer, Mobile App Developer, and Creative Designer from Afghanistan. Showcasing web & mobile projects, UI/UX, and technical articles.",
+    title: "Sanaullah Shaheer | Data Scientist & Full-Stack Developer",
+    description: "Data Scientist, Full-Stack Developer, Mobile App Developer, and Creative Designer from Afghanistan. Showcasing web & mobile projects, UI/UX, and technical articles.",
     url: "/",
     siteName: "Sanaullah Shaheer Portfolio",
     images: [
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sanaullah Shaheer | Full-Stack Developer",
-    description: "Full-Stack Developer, Mobile App Developer, and Creative Designer from Afghanistan. Showcasing web & mobile projects, UI/UX, and technical articles.",
+    title: "Sanaullah Shaheer | Data Scientist & Full-Stack Developer",
+    description: "Data Scientist, Full-Stack Developer, Mobile App Developer, and Creative Designer from Afghanistan. Showcasing web & mobile projects, UI/UX, and technical articles.",
     images: ["/og-image.png"],
   },
 };

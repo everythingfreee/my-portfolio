@@ -37,5 +37,9 @@ export const TiktokIcon: React.FC<{ size?: number }>= ({ size = 20 }) => (
     <path d="M12.5 2v3.5c2.7 0 4.9 2.2 4.9 4.9V16c0 2.8-2.2 4.9-4.9 4.9S7.6 18.8 7.6 16c0-2.3 1.6-4.2 3.7-4.7V9.3c-1.9.4-3.3 2.1-3.3 4.1 0 2.4 2 4.3 4.4 4.3s4.4-1.9 4.4-4.3V6.9C15.6 6.9 13.9 5.8 12.5 4.4V2z"/>
   </svg>
 );
+export const FooterIcon: React.FC<{ size?: number }>= ({ size = 100 }) => (
+  // Load the image from the public folder and make it responsive
+  <img src="/about_img.webp" alt="Website Footer image" width={size} height={size} className="w-full h-auto" />
+);
 
 export default null;

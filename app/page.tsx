@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { getPublishedProjects, getPublishedBlogs } from "@/lib/db-queries";
-import { ArrowRight, Code2, FolderKanban, BookOpen, Star, Sparkles } from "lucide-react";
+import { ArrowRight, Code2, FolderKanban, BookOpen, Star, Sparkles, BotMessageSquare } from "lucide-react";
 
 export const dynamic = "force-dynamic";
 
@@ -36,7 +36,7 @@ export default async function Home() {
         </h1>
 
         <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl leading-relaxed mb-8">
-          Hi, I&apos;m <span className="font-semibold text-zinc-900 dark:text-zinc-100">Sanaullah Shaheer (Shabeer)</span>. Full-Stack Developer, Mobile App Developer, and Creative Designer — building web & mobile apps, UI/UX, 3D, and multimedia content.
+          Hi, I&apos;m <span className="font-semibold text-zinc-900 dark:text-zinc-100">Sanaullah Shaheer (Shabeer)</span>. Data Scientist, Full-Stack Developer, Mobile App Developer, and Creative Designer — building web & mobile apps, UI/UX, 3D, and multimedia content.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md">
@@ -62,12 +62,13 @@ export default async function Home() {
         <h2 className="sr-only">Core Expertise</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="glass-card p-6 flex flex-col space-y-3">
-            <div className="h-10 w-10 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 flex items-center justify-center text-indigo-600 dark:text-indigo-400">
-              <Code2 size={20} />
+            <div className="h-10 w-10 rounded-xl bg-purple-50 dark:bg-purple-950/40 flex items-center justify-center text-purple-600 dark:text-purple-400">
+              {/* Robot image */}
+              <BotMessageSquare size={20} />
             </div>
-            <h3 className="font-bold text-lg text-zinc-900 dark:text-zinc-100">Frontend Excellence</h3>
+            <h3 className="font-bold text-lg text-zinc-900 dark:text-zinc-100">Data Science</h3>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
-              Highly responsive Next.js apps with custom CSS/Tailwind animations and clean, modular component state.
+              Data-driven solutions using Python and machine learning techniques for predictive modeling, data analysis, and visualization.
             </p>
           </div>
           <div className="glass-card p-6 flex flex-col space-y-3">
@@ -80,12 +81,12 @@ export default async function Home() {
             </p>
           </div>
           <div className="glass-card p-6 flex flex-col space-y-3">
-            <div className="h-10 w-10 rounded-xl bg-purple-50 dark:bg-purple-950/40 flex items-center justify-center text-purple-600 dark:text-purple-400">
-              <BookOpen size={20} />
+            <div className="h-10 w-10 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 flex items-center justify-center text-indigo-600 dark:text-indigo-400">
+              <Code2 size={20} />
             </div>
-            <h3 className="font-bold text-lg text-zinc-900 dark:text-zinc-100">SEO + Performance</h3>
+            <h3 className="font-bold text-lg text-zinc-900 dark:text-zinc-100">Frontend Excellence</h3>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
-              Strict metadata adherence, OpenGraph standards, semantic HTML structure, and optimized Core Web Vitals.
+              Modern web and mobile interfaces using React, Next.js, Tailwind CSS, and responsive design principles for optimal user experience.
             </p>
           </div>
         </div>
