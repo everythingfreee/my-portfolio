@@ -56,11 +56,11 @@ export const Footer = () => {
                 <span>+93 777 386 727</span>
               </a>
               <a
-                href="mailto:contact@sanaullahshaheer.work.gd"
+                href="mailto:contact@sanaullahshaheer.dpdns.org"
                 className="flex items-center space-x-2.5 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
               >
                 <Mail size={15} />
-                <span>contact@sanaullahshaheer.work.gd</span>
+                <span>contact@sanaullahshaheer.dpdns.org</span>
               </a>
             </div>
           </div>
@@ -92,11 +92,7 @@ export const Footer = () => {
 
         <div className="border-t border-zinc-100 dark:border-zinc-900 mt-8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-600 dark:text-zinc-400">
           <p>© {currentYear} Sanaullah Shaheer. All rights reserved.</p>
-          <div className="flex space-x-4">
-            <Link href="/admin/login" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-              CMS Administration
-            </Link>
-          </div>
+          
         </div>
       </div>
     </footer>

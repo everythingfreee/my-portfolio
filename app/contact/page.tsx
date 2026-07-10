@@ -103,7 +103,7 @@ export default function ContactPage() {
               </a>
 
               <a
-                href="mailto:contact@sanaullahshaheer.work.gd"
+                href="mailto:contact@sanaullahshaheer.dpdns.org"
                 className="flex items-center space-x-3.5 text-zinc-650 dark:text-zinc-355 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors group"
               >
                 <div className="p-3 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/50 dark:border-zinc-800/50 rounded-xl group-hover:bg-indigo-50 dark:group-hover:bg-indigo-950/30 transition-colors">
@@ -113,7 +113,7 @@ export default function ContactPage() {
                   <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wider block">
                     Email
                   </span>
-                  <span className="font-semibold text-sm sm:text-base">contact@sanaullahshaheer.work.gd</span>
+                  <span className="font-semibold text-sm sm:text-base">contact@sanaullahshaheer.dpdns.org</span>
                 </div>
               </a>
             </div>
