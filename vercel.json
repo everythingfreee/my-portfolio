@@ -1,36 +1,36 @@
 {
   "redirects": [
     {
-      "source": "/admin/login/:path*",
+      "source": "/admin/login",
       "has": [
         {
           "type": "host",
           "value": "sanaullahshaheer.vercel.app"
         }
       ],
-      "destination": "https://dpdns.org*",
+      "destination": "https://dpdns.org",
       "permanent": true
     },
     {
-      "source": "/admin/login/:path*",
+      "source": "/admin/login",
       "has": [
         {
           "type": "host",
           "value": "sanaullahshaheer.is-a.dev"
         }
       ],
-      "destination": "https://dpdns.org*",
+      "destination": "https://dpdns.org",
       "permanent": true
     },
     {
-      "source": "/admin/login/:path*",
+      "source": "/admin/login",
       "has": [
         {
           "type": "host",
           "value": "sanaullahshaheer.dpdns.org"
         }
       ],
-      "destination": "https://dpdns.org*",
+      "destination": "https://dpdns.org",
       "permanent": true
     }
   ],
@@ -52,8 +52,8 @@
           "value": "login.admin.sanaullahshaheer.dpdns.org"
         }
       ],
-      "source": "/:path*",
-      "destination": "/admin/login/:path*"
+      "source": "/(.*)",
+      "destination": "/admin/login/$1"
     }
   ]
 }
