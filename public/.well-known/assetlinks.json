@@ -1,0 +1,17 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.shaheer.mediarescue.mediarescue",
+      "sha256_cert_fingerprints": [
+        "CC:19:81:47:81:2F:C5:FE:6F:7C:61:3B:2A:25:A5:9E:F9:4D:A9:68:F0:29:1E:2A:BC:90:05:65:5E:1D:97:A1",
+        "56:E8:B9:BA:D1:BD:54:EF:E7:E4:A3:14:97:C0:BE:72:13:8B:C8:9C:A8:BB:46:A4:55:DA:3D:6B:17:92:A5:A3",
+        "E6:1D:8E:A6:32:48:B0:C0:37:10:10:17:16:F1:AA:6D:07:C7:86:30:E8:0D:67:7A:3E:F5:43:6E:F2:22:53:24"
+      ]
+    }
+  }
+]
